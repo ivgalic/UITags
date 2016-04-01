@@ -28,7 +28,7 @@ public class UITags: UIView, UICollectionViewDataSource, UICollectionViewDelegat
     
     @IBInspectable public var tagCornerRadius: CGFloat = 3
     
-    private var collectionView: UICollectionView?
+    public var collectionView: UICollectionView?
     
     public var layout: UICollectionViewLayout = UICollectionViewLeftAlignedLayout() {
         didSet {
@@ -51,7 +51,7 @@ public class UITags: UIView, UICollectionViewDataSource, UICollectionViewDelegat
         }
     }
     
-    private var selectedTags = [Int]()
+    public var selectedTags = [Int]()
     
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
